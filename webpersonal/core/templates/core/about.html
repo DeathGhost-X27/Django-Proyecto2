@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Abisa De Jesús</h2>   
+        <p>Nací en Toluca y me he formado académicamente en instituciones como la UAEMex y la UTVT, donde he desarrollado mi interés por la tecnología y las soluciones informáticas. A lo largo de mis años de estudio, he fortalecido mis habilidades en soporte técnico, redes, desarrollo y análisis de sistemas.</p>
+        <p>Mi objetivo es seguir creciendo profesionalmente, aplicar mis conocimientos en proyectos reales y aportar valor en cualquier entorno donde pueda desarrollar mis capacidades.</p>
+    </div>
+</div>
+{% endblock %}
